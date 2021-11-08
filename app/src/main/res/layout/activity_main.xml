@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundcolor">
+
+  <TextView
+      android:id="@+id/answerText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="START"
+      android:textAlignment="center"
+      android:textSize="50dp"
+      android:layout_marginTop="200dp"
+      android:textStyle="bold"
+      android:background="@android:color/transparent"
+      android:textColor="#353b48"
+
+      />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/add1Btn"
+      android:text="ADD + 1"
+      android:textAlignment="center"
+      android:gravity="center_horizontal"
+      android:layout_below="@+id/answerText"
+      android:layout_marginTop="100dp"
+      android:textSize="30dp"
+      android:layout_marginLeft="50dp"
+      android:background="@drawable/cornersbutton"
+      android:padding="10dp"
+      />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/add2Btn"
+      android:text="ADD + 2"
+      android:textAlignment="center"
+      android:gravity="center_horizontal"
+      android:layout_below="@+id/answerText"
+      android:layout_toRightOf="@+id/add1Btn"
+      android:layout_marginTop="100dp"
+      android:textSize="30dp"
+      android:layout_marginLeft="50dp"
+      android:padding="10dp"
+      android:background="@drawable/cornersbutton"
+      tools:ignore="RtlHardcoded" />
+
+  <Button
+      android:id="@+id/clearBtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/add1Btn"
+      android:layout_marginLeft="150dp"
+      android:layout_marginTop="56dp"
+      android:background="@drawable/cornersbutton"
+      android:gravity="center_horizontal"
+      android:padding="10dp"
+      android:text="Clear"
+      android:textAlignment="center"
+      android:textSize="20dp" />
+
+</RelativeLayout>
